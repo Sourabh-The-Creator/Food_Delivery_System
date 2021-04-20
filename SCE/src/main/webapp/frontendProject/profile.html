@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .center {
+            margin: auto;
+            width: 85%;
+            height: 50%;
+            padding: 10px;
+        }
+
+        .name {
+            text-align: center;
+            position: relative;
+            top: -120px;
+            left: -330px;
+            color: white;
+            font-size: 20px;
+
+        }
+
+
+        img {
+
+            margin: 20px;
+            align-items: initial;
+            border-radius: 50%;
+            border: 8px solid #555;
+            border-color: aliceblue;
+        }
+
+        .bg {
+            background-image: url('../frontendProject/images/profileBG.png');
+            width: 100%;
+            height: 80%;
+            background-position: center;
+            opacity: 1;
+        }
+
+        .myButton {
+
+            padding: 30px;
+            display: block;
+
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 80px;
+            right: 200px;
+
+
+        }
+
+        .box {
+            width: 250px;
+            height: 400px;
+
+            background-color: #FFDFA9;
+            padding: 5px;
+            margin: 1px;
+
+        }
+
+        .center sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 0, 0);
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="center">
+
+        <div class="bg">
+            <img src="../frontendProject/images/img_avatar.png" height="130" width="130">
+
+            <div class="name"> <b> SOURABH MIRAJE </b></div>
+            <div class="name"> <b>9850350853</b> </div>
+
+            <div class="myButton">
+
+                <button style="font-size:20px" onclick="alert('Hello world!')">
+                    Edit Profile <i class="material-icons"> border_color</i>
+                </button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
