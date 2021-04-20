@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Online Food Delivery </title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<style>
+   #navbar {
+      display: flex;
+      align-items: center;
+      position: initial;
+      top: 0px;
+      right: -1px;
+   }
+
+   #navbar::before {
+      content: "";
+      background-color: #a95858;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      margin-left: -10px;
+      opacity: 1;
+   }
+
+   #navbar ul {
+      display: flex;
+      margin: 0px 0px;
+      padding: 0px 0px;
+      list-style: none;
+      font-size: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+      cursor: pointer;
+   }
+
+   #navbar ul li a {
+      color: black;
+      margin: 7px 7px;
+      margin-top: 20px;
+      padding: 15px 7px;
+   }
+
+
+   .activity {
+      position: relative;
+      left: 680px;
+      align-content: center;
+      align-items: center;
+
+   }
+
+   #navbar ul li a:hover {
+      color: white;
+      background-color: transparent;
+      border-radius: 50px;
+   }
+
+   #home {
+      display: flex;
+      flex-direction: column;
+      padding: 3px 200px;
+      height: 517px;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Baloo Bhai 2', cursive;
+   }
+
+   #home::before {
+      content: "";
+      position: absolute;
+      top: 82px;
+      left: 0px;
+      background-image: url('../frontendProject/images/bg.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 88%;
+      width: 100%;
+      z-index: -1;
+      opacity: 1;
+   }
+
+
+   h1 {
+      color: white;
+      text-align: center;
+      font-size: 3.5rem;
+      margin: 5px;
+      padding: 5px;
+   }
+
+   #head {
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+   }
+
+
+   /**********************************************************************************/
+
+   h2 {
+      color: black;
+      height: 171px;
+      ;
+      text-align: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      margin: 5px;
+      padding-top: 114px;
+   }
+
+   h3 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 10px;
+   }
+
+   #container {
+      top: 22px;
+      text-align: center;
+   }
+
+   .services {
+      text-align: center;
+      margin: 34px;
+   }
+
+   .services .box {
+      position: relative;
+      top: 20px;
+      /*border: 2px solid black;*/
+      margin: 2px 5px;
+      border-radius: 30px;
+      height: 183px;
+      width: 299.33px;
+      padding: 29px;
+      background-color: rgb(240, 222, 198);
+   }
+
+   .services .box img {
+      height: 146px;
+      width: 251px;
+   }
+
+   #pizza {
+      float: none;
+      top: -86px;
+      right: 32px;
+   }
+
+   #chinese {
+      float: right;
+      top: -337px;
+      right: 586px;
+   }
+
+   #burger {
+      float: right;
+      top: -337px;
+      left: 305px;
+   }
+
+   #coffee {
+      float: none;
+      right: 32px;
+      top: -81px;
+   }
+
+   #milkshake {
+      float: right;
+      top: -331px;
+      left: 156px;
+   }
+
+   #sandwich {
+      float: right;
+      top: -580px;
+      right: 70px
+   }
+
+   /***********************************************************************************************/
+
+   h4 {
+      font-size: 1.7rem;
+      padding-left: 59px;
+   }
+
+   #rect {
+      display: flex;
+      border: 3px solid rgb(170, 159, 159);
+      background-color: rgb(111, 151, 111);
+      margin: 14px 10px;
+      padding: 14px 220px;
+      width: 1010px;
+      position: relative;
+      bottom: 490px;
+   }
+
+
+
+   #imgs {
+      padding-top: 44px;
+   }
+
+   /*******************************************************************************************************/
+
+   search-container {
+      float: left;
+      margin-bottom: 20px;
+   }
+
+   input[type=text] {
+      padding: 6px;
+      margin-top: 1px;
+      font-size: 17px;
+      border: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+   }
+
+   .search-container button {
+      float: right;
+      padding: 2px 10px;
+      margin-top: 1px;
+      margin-right: 4px;
+      background: rgb(255, 255, 255);
+      font-size: 14px;
+      cursor: pointer;
+      border: white;
+   }
+</style>
+
+<body>
+   <nav id="navbar">
+      <div id="logo">
+         <img src="../frontendProject/images/logo.png" alt="MyMeal.com" height="70" width="100">
+      </div>
+
+      <ul>
+         <li class="item"><a href="../frontendProject/home.html">Home</a></li>
+         <li class="item"><a href="index.html#about_us">About us</a></li>
+         <li class="activity">
+
+            <div class="search-container">
+               <form action="../frontendProject/menu.html" method="GET">
+                  <input type="text" placeholder="Search menu" name="search" font-size="30px">
+                  <button type="submit">
+                     <i class="material-icons">search</i>
+                  </button>
+               </form>
+
+            </div>
+         </li>
+         <li class="activity"><a href="../frontendProject/menu.html">Menu</a></li>
+         <li class="activity"><a href="../frontendProject/mycart.html"><i class="material-icons"
+                  style="font-size:36px;color:white">shopping_cart</i></a>
+         </li>
+         <li class="activity"><a href="../frontendProject/profile.html"><i class="material-icons"
+                  style="font-size:36px;color:white">account_circle</i></a>
+         </li>
+      </ul>
+   </nav>
+
+
+   <section id="home">
+      <h1><b>WELCOME TO FOODIEZ</b></h1>
+      <p id="head"><b>Your favourite food delivery partner....</b></p>
+
+   </section>
+
+
+
+   <section class="container">
+      <h2>Our Services</h2>
+      <div class="services">
+
+         <div class="box" id="pizza">
+            <img src="../frontendProject/images/pizza.jfif" alt="pizza">
+            <h3>Pizza</h3>
+         </div>
+
+         <div class="box" id="chinese">
+            <img src="../frontendProject/images/chinese food.jfif" alt="chinese">
+            <h3>Chinese</h3>
+         </div>
+
+         <div class="box" id="burger">
+            <img src="../frontendProject/images/burger.jfif" alt="burger">
+            <h3>Burger</h3>
+         </div>
+
+         <div class="box" id="coffee">
+            <img src="../frontendProject/images/coffee.jfif" alt="coffee">
+            <h3>Coffee</h3>
+         </div>
+
+         <div class="box" id="milkshake">
+            <img src="../frontendProject/images/milkshake.jpeg" alt="milkshake">
+            <h3>Milkshake</h3>
+         </div>
+
+         <div class="box" id="sandwich">
+            <img src="../frontendProject/images/sandwich.jpeg" alt="sandwich">
+            <h3>Sandwich</h3>
+         </div>
+      </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
