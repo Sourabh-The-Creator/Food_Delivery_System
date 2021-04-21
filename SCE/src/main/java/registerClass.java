@@ -59,6 +59,7 @@ public class registerClass extends HttpServlet {
 			if(rowInserted > 0)
 			{
 				System.out.println("Inserted Successfuly...");
+				response.sendRedirect("/FoodDeliverSystem/frontendProject/home.html");  
 			}
 		}catch(Exception e)
 		{
