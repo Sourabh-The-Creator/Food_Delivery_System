@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <head>
+        <div class="nav-bar">
+
+        </div>
+    </head>  -->
+    <header>
+        <div class="wrapper">
+            <div class="brand">
+                <a href="#" class="brand_name">Foodiez</a>
+            </div>
+            <nav>
+                <a href="../">Home</a> <a href="#">My profile</a> <a href="#">Menu</a> <a href="#">My cart</a> 
+            </nav>
+        </div>
+    </header>
+    <body>
+    </br>
+        <span class="confirm">Confirm your order - </span><span id="result"></span></br></br></br>
+        <div style="margin-left: 200px;">
+            <form name="info" class="info-tile">
+                <h3>Add the delivery address</h3><input class="order-info" type="text" name="address"> 
+                <h3>Mobile no.</h3><input class="order-info" type="tel" name="contact"> 
+            </form></br></br>
+            <button class="Payment-button">Make payment - &#8377;<span id="price"></span></button> 
+        </div>
+        <script>
+            function putValues(){
+                var queryString = location.search;
+                var index = queryString.indexOf('?');
+                var end = queryString.indexOf('@');
+                var temp = "";
+                for (var i = index+1; i < end; i++){
+                    temp+=queryString[i];
+                }
+                var foodname = "";
+                for(var i = 0;i<temp.length;i++){
+                if(temp[i] == '%'){
+                    foodname+=" ";
+                    i+=2;
+                }
+                else
+                    foodname+=temp[i];
+                }
+                var price = "";
+                for(var i = end+1;i<queryString.length;i++){
+                    price+=queryString[i];
+                }
+                document.getElementById("price").innerHTML=price;
+                document.getElementById("result").innerHTML=foodname;
+            }
+            putValues();
+        </script> 
+    </body>
+</html>
