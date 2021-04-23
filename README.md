@@ -7,5 +7,5 @@
   ```java
   Front-end: HTML, CSS, JS
   Back-end: MySQL
-  on apache TOMCAT server with JDBC connectivity.
+  on apache TOMCAT server with JDBC.
   ``` 
