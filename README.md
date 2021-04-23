@@ -2,7 +2,7 @@
 
   * Mini project for IT workshop in Java
 
-  * A simple food delivery websites using :
+  * A simple food delivery website using :
   
   ```java
   Front-end: HTML, CSS, JS
