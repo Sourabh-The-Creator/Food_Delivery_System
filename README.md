@@ -9,3 +9,13 @@
   Back-end: MySQL
   on apache TOMCAT server with JDBC.
   ``` 
+  
+  * Contributors:
+  
+    Sourabh Miraje (https://github.com/Sourabh-The-Creator)
+
+    Shantanu Kawade (https://github.com/shantanu1k)
+
+    Nishant Choudhari (https://github.com/nishant1760)
+
+    Vaibhavi Mukadam (https://github.com/Vaibhavi2111)
